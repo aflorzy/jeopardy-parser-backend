@@ -15,4 +15,6 @@ public class Clue {
     private String clueOrderNumber;
     private String clueText;
     private String correctResponse;
+    private int boardPositionX;
+    private int boardPositionY;
 }

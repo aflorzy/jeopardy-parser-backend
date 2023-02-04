@@ -5,17 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
 import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Round {
+public class Season {
 
-    private String title;
-    private List<Category> categories;
-    private Set<Score> finalScores;
-    private Set<Clue> clues;
+    private int seasonNumber;
+    private Set<Integer> gameIDs;
 }
