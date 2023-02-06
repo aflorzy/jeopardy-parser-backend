@@ -103,7 +103,7 @@ public class GameService {
      */
     public List<String> getAllSeasonIDs(String type) {
         List<String> types = Arrays.asList("all", "normal", "special", "latest", "previous");
-        if (types.indexOf(type) < 0) {
+        if (!types.contains(type)) {
 //            Invalid type
             return null;
         }
@@ -118,13 +118,13 @@ public class GameService {
                 String seasonKey = "?season=";
                 int seasonIndex = seasonURL.indexOf(seasonKey) + seasonKey.length();
                 String seasonId = seasonURL.substring(seasonIndex);
-                return Arrays.asList(seasonId);
+                return List.of(seasonId);
             } else if (type.equals("previous")) {
                 String seasonURL = navbarItems.get(1).attr("href");
                 String seasonKey = "?season=";
                 int seasonIndex = seasonURL.indexOf(seasonKey) + seasonKey.length();
                 String seasonId = seasonURL.substring(seasonIndex);
-                return Arrays.asList(seasonId);
+                return List.of(seasonId);
             } else {
                 Elements seasons = content.getElementsByTag("tr");
 
