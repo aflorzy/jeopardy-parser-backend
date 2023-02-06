@@ -15,7 +15,7 @@ Endpoints are located at `http://localhost:8081/api` by default.
 Each call to J! Archive is prefixed with a 250ms delay to space out http requests and reduce stress on their servers.
 
 ## License
-This software is released under the MIT License. See the LICENSE.md file for more information.
+This software is released under the MIT License. See the [LICENSE.md](./LICENSE.md) file for more information.
 
 ## Disclaimer
 
