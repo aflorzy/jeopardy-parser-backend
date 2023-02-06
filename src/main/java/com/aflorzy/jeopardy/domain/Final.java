@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.Set;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -19,6 +19,7 @@ public class Final {
     private String categoryComments;
     private String clueText;
     private String correctResponse;
+    private String tapeDate;
 
-    private Set<Score> finalScores;
+    private List<Score> finalScores;
 }

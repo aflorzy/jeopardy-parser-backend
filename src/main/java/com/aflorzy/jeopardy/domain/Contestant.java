@@ -13,6 +13,5 @@ public class Contestant {
 
     private String playerFullName;
     private String playerOccupationAndOrigin;
-    private String playerpicture;
     private String playerId;
 }

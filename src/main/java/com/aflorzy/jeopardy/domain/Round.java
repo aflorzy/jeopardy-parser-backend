@@ -16,6 +16,5 @@ public class Round {
 
     private String title;
     private List<Category> categories;
-    private Set<Score> finalScores;
-    private Set<Clue> clues;
+    private List<Score> finalScores;
 }

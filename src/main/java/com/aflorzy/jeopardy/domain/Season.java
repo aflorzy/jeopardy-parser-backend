@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.Set;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -13,6 +13,6 @@ import java.util.Set;
 @ToString
 public class Season {
 
-    private int seasonNumber;
-    private Set<Integer> gameIDs;
+    private String seasonNumber;
+    private List<Integer> gameIDs;
 }

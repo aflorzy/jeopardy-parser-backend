@@ -11,6 +11,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -22,5 +25,20 @@ public class JeopardyApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(JeopardyApplication.class, args);
+	}
+
+	@Bean
+	public WebMvcConfigurer CORSConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**")
+						.allowedOrigins("*")
+						.allowedHeaders("*")
+						.allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
+						.maxAge(-1)   // add maxAge
+						.allowCredentials(false);
+			}
+		};
 	}
 }

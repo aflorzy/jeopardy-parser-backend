@@ -14,6 +14,7 @@ public class Clue {
     private String clueValue;
     private String clueOrderNumber;
     private String clueText;
+    private String clueMultimediaURL;
     private String correctResponse;
     private int boardPositionX;
     private int boardPositionY;

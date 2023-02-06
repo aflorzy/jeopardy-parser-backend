@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.Set;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,5 +15,5 @@ public class Category {
 
     private String categoryName;
     private String categoryComments;
-    private Set<Clue> clues;
+    private List<Clue> clues;
 }

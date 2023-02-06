@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.aflorzy</groupId>
 	<artifactId>jeopardy</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>jeopardy</name>
 	<description>J! Archive Parser and Data Extractor</description>
 	<properties>

@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.Set;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -13,9 +13,9 @@ import java.util.Set;
 @ToString
 public class Game {
 
-    private String gameId;
+    private int gameId;
     private String title;
-    private Set<Contestant> contestants;
+    private List<Contestant> contestants;
     private Round jeopardy;
     private Round doubleJeopardy;
     private Final finalJeopardy;
